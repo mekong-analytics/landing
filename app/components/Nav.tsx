@@ -2,7 +2,7 @@ export function Nav() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-[var(--color-border)] bg-[var(--color-paper)]/80 backdrop-blur-[16px]">
       <div className="container flex items-center justify-between py-5">
-        <a href="#" className="text-lg font-extrabold tracking-tight">
+        <a href="#" className="font-serif text-2xl font-semibold tracking-tight">
           Mekong Analytics
         </a>
         <div className="hidden items-center gap-8 md:flex">

@@ -16,9 +16,9 @@ export function Coverage() {
     <section id="coverage" className="section pt-0">
       <div className="container">
         <div className="mb-16 max-w-2xl">
-          <span className="overline mb-4">Who We Serve</span>
-          <h2 className="text-4xl leading-[1.15] font-extrabold tracking-[-0.025em] md:text-5xl">
-            Built for serious capital.
+          <span className="eyebrow mb-4">Who We Serve</span>
+          <h2 className="font-serif text-4xl leading-[1.1] font-semibold tracking-[-0.025em] md:text-5xl">
+            Built for serious <span className="italic">capital</span>.
           </h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
@@ -27,8 +27,8 @@ export function Coverage() {
               key={audience.label}
               className="rounded-xl border border-[var(--color-border)] bg-white p-10 shadow-[0_2px_8px_rgba(0,0,0,.06)] transition-transform duration-[400ms] ease hover:-translate-y-1 md:p-14"
             >
-              <span className="overline mb-6">{audience.label}</span>
-              <h3 className="mb-5 text-2xl leading-tight font-bold md:text-3xl">
+              <span className="eyebrow mb-6">{audience.label}</span>
+              <h3 className="mb-5 font-serif text-3xl leading-tight font-semibold md:text-4xl">
                 {audience.title}
               </h3>
               <p className="leading-relaxed text-[var(--color-deep)]/70">

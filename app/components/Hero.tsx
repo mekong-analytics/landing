@@ -8,9 +8,9 @@ export function Hero() {
           <span className="mb-6 inline-block rounded-full border border-[var(--color-clay)] px-3 py-1 text-[10px] font-bold tracking-[0.15em] text-[var(--color-clay)] uppercase">
             Vietnam Market Intelligence
           </span>
-          <h1 className="mb-8 text-5xl leading-[1.12] font-extrabold tracking-[-0.025em] md:text-6xl lg:text-7xl">
+          <h1 className="mb-8 font-serif text-5xl leading-[1.05] font-semibold tracking-[-0.025em] md:text-6xl lg:text-7xl">
             Vietnam&apos;s Capital Markets{" "}
-            <span className="text-[var(--color-clay)]">Clarified</span>.
+            <span className="text-[var(--color-clay)] italic">Clarified</span>.
           </h1>
           <p className="mb-10 max-w-xl text-lg text-[var(--color-deep)]/70 md:text-xl">
             Translated earnings calls, AGM notes and investor relations

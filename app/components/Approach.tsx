@@ -31,14 +31,14 @@ export function Approach() {
           className="aspect-[4/3] w-full rounded-xl object-cover shadow-xl shadow-[var(--color-deep)]/10"
         />
         <div>
-          <span className="overline mb-4">Our Approach</span>
-          <h2 className="mb-10 text-4xl leading-[1.15] font-extrabold tracking-[-0.025em] md:text-5xl">
-            Local context, global standards.
+          <span className="eyebrow mb-4">Our Approach</span>
+          <h2 className="mb-10 font-serif text-4xl leading-[1.1] font-semibold tracking-[-0.025em] md:text-5xl">
+            Local context, <span className="italic">global</span> standards.
           </h2>
           <div className="flex flex-col gap-10">
             {FEATURES.map((feature) => (
               <div key={feature.number} className="flex gap-6">
-                <div className="shrink-0 text-3xl leading-none font-extrabold text-[var(--color-clay)]">
+                <div className="shrink-0 font-serif text-4xl leading-none italic text-[var(--color-clay)]">
                   {feature.number}
                 </div>
                 <div>

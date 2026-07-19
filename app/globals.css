@@ -24,6 +24,7 @@
   --color-gold: var(--color-gold);
   --color-border: var(--color-border);
   --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 }
 
 * {
@@ -52,7 +53,7 @@ body {
   padding-block: var(--section-padding);
 }
 
-.overline {
+.eyebrow {
   display: block;
   font-size: 12px;
   font-weight: 700;
