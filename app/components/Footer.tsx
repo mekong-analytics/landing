@@ -1,11 +1,9 @@
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--color-border)] py-12">
-      <div className="container flex flex-col items-center justify-between gap-4 text-[10px] font-bold tracking-[0.1em] text-[var(--color-deep)]/45 uppercase md:flex-row">
-        <span className="font-serif text-base font-semibold tracking-tight text-[var(--color-deep)] normal-case">
-          Mekong Analytics
-        </span>
-        <span>© 2026 · Ho Chi Minh City</span>
+    <footer className="border-t border-border bg-white px-6 py-10 md:px-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-sm text-mekong-deep/50 md:flex-row">
+        <span className="font-bold tracking-tight text-mekong-deep">Mekong Analytics</span>
+        <span>© 2026 · Singapore</span>
       </div>
     </footer>
   );

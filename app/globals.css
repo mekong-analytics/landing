@@ -1,93 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --color-paper: oklch(98.5% 0.005 90);
-  --color-deep: oklch(28% 0.045 165);
-  --color-clay: oklch(58% 0.14 50);
-  --color-gold: oklch(74% 0.09 80);
-  --color-border: oklch(28% 0.045 165 / 10%);
+  --radius: 0.5rem;
 
-  --section-padding: 72px;
-  --content-width: 1200px;
-}
+  --mekong-deep: #161e26;
+  --mekong-clay: #1b7a66;
+  --mekong-paper: #fff;
+  --mekong-gold: #339a83;
+  --mekong-red: #c13c3b;
 
-@media (min-width: 768px) {
-  :root {
-    --section-padding: 96px;
-  }
+  --background: var(--mekong-paper);
+  --foreground: var(--mekong-deep);
+  --primary: var(--mekong-clay);
+  --primary-foreground: #fff;
+  --secondary: #f4f5f7;
+  --secondary-foreground: var(--mekong-deep);
+  --muted: #f1f4f6;
+  --muted-foreground: #575e66;
+  --accent: #def0ea;
+  --accent-foreground: var(--mekong-clay);
+  --border: #161e261f;
 }
 
 @theme inline {
-  --color-paper: var(--color-paper);
-  --color-deep: var(--color-deep);
-  --color-clay: var(--color-clay);
-  --color-gold: var(--color-gold);
-  --color-border: var(--color-border);
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
+  --color-mekong-deep: var(--mekong-deep);
+  --color-mekong-clay: var(--mekong-clay);
+  --color-mekong-paper: var(--mekong-paper);
+  --color-mekong-gold: var(--mekong-gold);
+  --color-mekong-red: var(--mekong-red);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--color-paper);
-  color: var(--color-deep);
-  font-family: var(--font-sans), sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.container {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding-inline: 24px;
-}
-
-.section {
-  padding-block: var(--section-padding);
-}
-
-.eyebrow {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-clay);
-}
-
-.btn {
-  display: inline-block;
-  padding: 16px 32px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border-radius: 999px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.btn-primary {
-  background: var(--color-deep);
-  color: var(--color-paper);
-}
-
-.btn-primary:hover {
-  background: var(--color-clay);
-}
-
-.btn-clay {
-  background: var(--color-clay);
-  color: var(--color-paper);
-}
-
-.btn-clay:hover {
-  background: var(--color-gold);
-  color: var(--color-deep);
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
 }

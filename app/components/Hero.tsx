@@ -2,42 +2,47 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <header className="section pt-32 md:pt-40">
-      <div className="container grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-        <div className="lg:col-span-7">
-          <span className="mb-6 inline-block rounded-full border border-[var(--color-clay)] px-3 py-1 text-[10px] font-bold tracking-[0.15em] text-[var(--color-clay)] uppercase">
-            Vietnam Market Intelligence
-          </span>
-          <h1 className="mb-8 font-serif text-5xl leading-[1.05] font-semibold tracking-[-0.025em] md:text-6xl lg:text-7xl">
-            Vietnam&apos;s Capital Markets{" "}
-            <span className="text-[var(--color-clay)] italic">Clarified</span>.
-          </h1>
-          <p className="mb-10 max-w-xl text-lg text-[var(--color-deep)]/70 md:text-xl">
-            Translated earnings calls, AGM notes and investor relations
-            materials from the Vietnamese market — built for global funds
-            and data aggregators.
-          </p>
-          <div className="flex flex-wrap items-center gap-6">
-            <a href="#access" className="btn btn-primary">
-              Request Access
-            </a>
-            <a
-              href="#methodology"
-              className="text-[11px] font-bold tracking-[0.15em] text-[var(--color-deep)]/60 uppercase transition-colors hover:text-[var(--color-clay)]"
-            >
-              Learn More →
-            </a>
+    <header className="px-6 pt-24 pb-20 md:px-10 md:pt-40 md:pb-28">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-7">
+            <span className="mb-6 inline-block rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
+              Vietnam Market Intelligence
+            </span>
+            <h2 className="mb-6 text-3xl leading-tight font-bold tracking-tight md:text-4xl">
+              Every word from the market, in English.
+            </h2>
+            <p className="mb-10 max-w-xl text-lg leading-relaxed text-mekong-deep/65">
+              Translated earnings calls, AGM notes and investor relations
+              materials from the Vietnamese market — built for global funds
+              and data aggregators.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href="#access"
+                className="rounded-md bg-mekong-clay px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-mekong-clay/90"
+              >
+                Request Access
+              </a>
+              <a
+                href="#methodology"
+                className="rounded-md border border-border px-6 py-3 text-sm font-semibold text-mekong-deep/70 transition-colors hover:border-mekong-clay hover:text-mekong-clay"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="lg:col-span-5">
-          <Image
-            src="/images/hero.jpg"
-            alt="Aerial view of a boat on the Mekong River passing lush greenery"
-            width={800}
-            height={1024}
-            priority
-            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-2xl shadow-[var(--color-deep)]/20"
-          />
+          <div className="lg:col-span-5">
+            <Image
+              src="/images/hero-street.jpg"
+              alt="Aerial view of a boat on the Mekong River passing lush greenery"
+              width={800}
+              height={1024}
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              priority
+              className="aspect-[4/5] w-full rounded-xl object-cover shadow-lg shadow-mekong-deep/10"
+            />
+          </div>
         </div>
       </div>
     </header>

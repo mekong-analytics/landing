@@ -20,32 +20,35 @@ const FEATURES = [
 
 export function Approach() {
   return (
-    <section id="methodology" className="section border-t border-[var(--color-border)]">
-      <div className="container grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
-        <Image
-          src="/images/approach.jpg"
-          alt="Modern glass facade of a building in Ho Chi Minh City"
-          width={1280}
-          height={800}
-          loading="lazy"
-          className="aspect-[4/3] w-full rounded-xl object-cover shadow-xl shadow-[var(--color-deep)]/10"
-        />
+    <section id="methodology" className="bg-secondary px-6 py-20 md:px-10 md:py-28">
+      <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <div>
-          <span className="eyebrow mb-4">Our Approach</span>
-          <h2 className="mb-10 font-serif text-4xl leading-[1.1] font-semibold tracking-[-0.025em] md:text-5xl">
-            Local context, <span className="italic">global</span> standards.
+          <Image
+            src="/images/methodology.jpg"
+            alt="Modern glass facade of a building in Ho Chi Minh City"
+            width={1280}
+            height={800}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            loading="lazy"
+            className="aspect-[4/3] w-full rounded-xl object-cover shadow-lg shadow-mekong-deep/10"
+          />
+        </div>
+        <div>
+          <span className="mb-3 block text-xs font-semibold tracking-wider text-mekong-clay uppercase">
+            Our Approach
+          </span>
+          <h2 className="mb-10 text-4xl leading-[1.08] font-bold tracking-tight md:text-5xl">
+            Local context, global standards.
           </h2>
-          <div className="flex flex-col gap-10">
+          <div className="space-y-8">
             {FEATURES.map((feature) => (
-              <div key={feature.number} className="flex gap-6">
-                <div className="shrink-0 font-serif text-4xl leading-none italic text-[var(--color-clay)]">
+              <div key={feature.number} className="flex gap-5">
+                <div className="mt-0.5 w-8 shrink-0 text-sm leading-none font-bold text-mekong-clay">
                   {feature.number}
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xs font-bold tracking-[0.1em] uppercase">
-                    {feature.title}
-                  </h3>
-                  <p className="leading-relaxed text-[var(--color-deep)]/70">
+                  <h4 className="mb-1.5 text-base font-semibold">{feature.title}</h4>
+                  <p className="text-[15px] leading-relaxed text-mekong-deep/65">
                     {feature.body}
                   </p>
                 </div>

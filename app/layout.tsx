@@ -1,24 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const cormorantGaramond = Cormorant_Garamond({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
-});
-
 const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
   title: "Mekong Analytics — Vietnam Market Intelligence Feeds",
   description:
     "Institutional-grade English translations of Vietnamese earnings calls, AGM notes, and IR materials. Real-time data feeds for funds and aggregators.",
+  authors: [{ name: "Mekong Analytics" }],
   openGraph: {
     title: "Mekong Analytics — Vietnam Market Intelligence",
     description:
@@ -39,10 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${cormorantGaramond.variable} ${inter.variable} antialiased`}
-    >
+    <html lang="en" className={inter.variable}>
       <body>{children}</body>
     </html>
   );
