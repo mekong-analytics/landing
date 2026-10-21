@@ -1,9 +1,19 @@
+import Image from "next/image";
+
+
 export function Nav() {
   return (
     <nav className="px-6 md:px-10">
       <div className="mx-auto flex max-w-6xl items-center justify-between py-5">
-        <a href="#" className="text-lg font-bold tracking-tight">
-          Mekong Analytics
+        <a href="#" className="block">
+          <Image
+            src="/brand/mekong-analytics-logo.svg"
+            alt="Mekong Analytics"
+            width={154}
+            height={28}
+            priority
+            className="h-7 w-auto"
+          />
         </a>
         <div className="hidden items-center gap-8 text-sm font-medium text-mekong-deep/70 md:flex">
           <a href="#methodology" className="transition-colors hover:text-mekong-clay">
